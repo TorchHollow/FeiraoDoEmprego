@@ -87,6 +87,7 @@
 /* Responsividade */
 @media (max-width: 768px) {
     .navbar {
+        width: 100%;
         flex-direction: column;
         align-items: stretch;
         padding: 15px;
@@ -153,6 +154,7 @@
     .menu-toggle img {
         height: 20px;
     }
+}
 
 /*Estilo da Headline*/
 
@@ -193,6 +195,22 @@
     padding: 5px;
 }
 
+/* Responsividade */
+@media (max-width: 768px){
+    .headline{
+        flex-direction: column-reverse;
+    }
+    
+    .headline img{
+        width: 60%;
+    }
+
+    .container-h{
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
 /*Estilo da area de emprego*/
 
 .emprego{
@@ -217,10 +235,21 @@
 
 .emprego li{
     list-style-type: none;
-    width: 15%;
+    width: 20%;
     height: auto;
     padding: 10px;
     background-color: var(--corTer);
     text-align: center;
     border-radius: 20px;
+}
+
+@media (max-width: 768px){
+    .emprego h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .emprego li{
+        font-size: 10px;
+    }
 }
