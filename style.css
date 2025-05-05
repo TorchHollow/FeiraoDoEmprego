@@ -54,6 +54,34 @@
     padding: 5px;
 }
 
-/*Estilo da area de empregos*/
+/*Estilo da area de emprego*/
 
-.empregos
+.emprego{
+    width: 100%;
+    height: auto;
+    background-color: var(--corPrin);
+    padding-bottom: 10px;
+}
+
+.emprego h2{
+    color: white;
+    text-shadow: 2.5px 1.5px black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.emprego ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.emprego li{
+    list-style-type: none;
+    width: 15%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--corTer);
+    text-align: center;
+    border-radius: 20px;
+}
