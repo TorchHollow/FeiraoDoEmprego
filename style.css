@@ -121,7 +121,7 @@
     .navbar-links.active {
         display: flex;
         opacity: 1;
-        transform: translateY(0);  
+        transform: translateY(0);
     }
 }
 
@@ -151,6 +151,7 @@
     .navbar-links li a {
         font-size: 14px;
     }
+
     .menu-toggle img {
         height: 20px;
     }
@@ -196,16 +197,16 @@
 }
 
 /* Responsividade */
-@media (max-width: 768px){
-    .headline{
+@media (max-width: 768px) {
+    .headline {
         flex-direction: column-reverse;
     }
-    
-    .headline img{
+
+    .headline img {
         width: 60%;
     }
 
-    .container-h{
+    .container-h {
         width: 100%;
         border-radius: 0px;
     }
@@ -213,27 +214,27 @@
 
 /*Estilo da area de emprego*/
 
-.emprego{
+.emprego {
     width: 100%;
     height: auto;
     background-color: var(--corPrin);
-    padding-bottom: 10px;
+    padding: 15px;
 }
 
-.emprego h2{
+.emprego h2 {
     color: white;
     text-shadow: 2.5px 1.5px black;
     font-size: 25px;
     padding: 5px;
 }
 
-.emprego ul{
+.emprego ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.emprego li{
+.emprego li {
     list-style-type: none;
     width: 20%;
     height: auto;
@@ -243,13 +244,85 @@
     border-radius: 20px;
 }
 
-@media (max-width: 768px){
-    .emprego h2{
+@media (max-width: 768px) {
+    .emprego h2 {
         font-size: 20px;
         text-align: center;
     }
 
-    .emprego li{
-        font-size: 10px;
+    .emprego li {
+        font-size: 8px;
+    }
+}
+
+/*Estilo da área de beneficios*/
+
+.beneficios {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corSecu);
+    padding: 50px;
+}
+
+.beneficios img {
+    z-index: 1;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.container-b1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-b2 {
+    width: 60%;
+    height: 10%;
+    background-color: var(--corTer);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.container-b2 p {
+    color: white;
+    font-size: 20px;
+}
+
+
+.container-b1 h1 {
+    color: white;
+    text-shadow: 2.5px 1.5px black;
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .beneficios {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .beneficios img {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .container-b2 {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .container-b2 p{
+        font-size: 15px;
     }
 }
