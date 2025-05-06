@@ -331,6 +331,7 @@
 
 #parceiro {
     padding: 2rem 0;
+    background-color: var(--corSecu);
 }
 
 .section-intro {
@@ -376,6 +377,33 @@ h2 {
     height: 3px;
     background-color: #193e60;
 }
+
+.carousel {
+    overflow: hidden;
+    width: 100%; /* ou defina uma largura específica */
+  }
+  
+  .image-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    animation: scroll 20s linear infinite;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
 @media (max-width: 768px) {
     body {
