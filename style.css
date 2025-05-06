@@ -1,6 +1,8 @@
+/*Configuração geral*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root{
+:root {
     --corPrin: #0A3A7C;
     --corSecu: #D4E0FA;
     --corTer: #010D49;
@@ -241,4 +243,75 @@ h2 {
     body {
         line-height: 1.5;
     }
+}
+
+/*Estilo da Headline*/
+
+.headline {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corPrin);
+}
+
+.headline img {
+    z-index: 1;
+}
+
+.container-h {
+    height: 10%;
+    background-color: var(--corTer);
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.container-h h1 {
+    color: white;
+    text-shadow: 2.5px 1.5px black;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.container-h h4 {
+    color: white;
+    text-shadow: 1.5px 1.5px black;
+    font-size: 15px;
+    padding: 5px;
+}
+
+/*Estilo da area de emprego*/
+
+.emprego{
+    width: 100%;
+    height: auto;
+    background-color: var(--corPrin);
+    padding-bottom: 10px;
+}
+
+.emprego h2{
+    color: white;
+    text-shadow: 2.5px 1.5px black;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.emprego ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.emprego li{
+    list-style-type: none;
+    width: 15%;
+    height: auto;
+    padding: 10px;
+    background-color: var(--corTer);
+    text-align: center;
+    border-radius: 20px;
 }
