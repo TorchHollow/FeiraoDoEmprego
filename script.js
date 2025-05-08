@@ -82,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     });
 });
+
