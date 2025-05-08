@@ -1,75 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./sources/hub_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feirão do Emprego</title>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./sources/hub_logo.png" alt="Logo do Hub" class="logo" />
+      <h1>Receba novidades do Feirão do Emprego!</h1>
+    </header>
 
-<body>
-
-    <nav class="navbar">
-        <div class="navbar-left">
-            <div class="navbar-logo">
-                <a href="./index.html">
-                    <img src="./sources/hub_logo.png" alt="Logo ENIAC">
-                </a>
-            </div>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <img src="./sources/list.svg" alt="Abrir menu">
-            </button>
-        </div>
-
-        <ul class="navbar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#parceiros">Parceiros</a></li>
-            <li><a href="#empregos">Empregos</a></li>
-            <li><a href="#sobre">Quem Somos</a></li>
-        </ul>
-    </nav>
-
-    <div id="navbar"></div>
-    <div id="sobre"></div>
-    <div id="vagas"></div>
-    <div id="parceiros"></div>
-    <div id="cadastro"></div>
-    <div id="footer"></div>
-<br>
-<br>
-    <section class="headline">
-        <div class="container-h">
-            <h1>Feirão do Emprego no Eniac:</h1>
-            <h4>Conectando Talentos com Oportunidades</h4>
-        </div>
-
-        <img width="50%" height="auto" src="./sources/pessoa_notebook.png" alt="pessoa_notebook">
-    </section>
-
-    <section id="empregos" class="emprego">
-        <h2>Algumas das vagas que oferecemos</h2>
-        <br>
+    <main>
+      <section class="benefits-section">
+        <h2>Benefícios de Participar do Feirão do Emprego</h2>
         <ul>
-            <li>Assistente de BI</li>
-            <li>Desenvolvedor Full Stack</li>
-            <li>Desenvolvedor Web</li>
-            <li>Desenvolvedor de Chatbot</li>
+          <li>Oportunidade de conhecer empresas da região</li>
+          <li>Fique por dentro de eventos exclusivos</li>
+          <li>Conquiste sua primeira experiência profissional</li>
+          <li>Oportunidades de estágio e emprego</li>
         </ul>
-        <br>
-        <ul>
-            <li>Engenheiro de Software</li>
-            <li>Desenvolvedor PHP</li>
-            <li>Vistoria Digital</li>
-            <li>Técnico de Suporte</li>
-        </ul>
+      </section>
 
-    </section>
+      <section class="form-section">
+        <h3>Inscreva-se no Feirão de Empregos</h3>
+        <form id="inscricaoForm">
+          <input type="text" placeholder="Nome completo" required />
+          <input type="email" placeholder="E-mail" required />
+          <input type="tel" placeholder="Telefone" required />
+          <button type="submit">Inscrever-se</button>
+        </form>
+        <p id="mensagem"></p>
+      </section>
+    </main>
 
-    <script src="./script.js"></script>
-</body>
+    <footer>
+      <div class="footer-left">
+        <p>
+          <a
+            href="https://www.google.com/maps/search/Rua+Força+Pública,+89"
+            target="_blank"
+            >Rua Força Pública, 89 - Centro - Guarulhos - SP</a
+          >
+        </p>
+        <p>&copy; 2025 Feirão do Emprego. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-right">
+        <h4>Contato</h4>
+        <p>Email: informacoes@eniac.edu.br</p>
+        <p>Tel: (11) 2472-5500 / (11) 94132-1584</p>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/@eniac.oficial" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://www.instagram.com/hubdecarreiras/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/hubdecarreiras/posts/?feedView=all" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
+    <script src="script.js"></script>
+  </body>
 </html>
